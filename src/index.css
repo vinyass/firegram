@@ -100,13 +100,28 @@ label:hover {
   opacity: 0.8;
 }
 
-.img-wrap img {
+.img-wrap .img {
   min-width: 100%;
   min-height: 100%;
   max-width: 150%;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.img-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  height: 20px;
+  width: 20px;
+}
+
+.img-wrap:hover .img-delete {
+  visibility: visible;
+  mix-blend-mode: darken;
+  cursor: pointer;
 }
 
 /* modal styles */
